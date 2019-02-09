@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<config>
+  <modules>
+    <JQ_JsMobileConsole>
+      <version>0.1.0</version>
+    </JQ_JsMobileConsole>
+  </modules>
+  <global>
+    <helpers>
+      <jsmobileconsole>
+        <class>JQ_JsMobileConsole_Helper</class>
+      </jsmobileconsole>
+    </helpers>
+  </global>
+  <frontend>
+        <layout>
+            <updates>
+                <jsmobileconsole>
+                    <file>jq/js-mobile-console.xml</file>
+                </jsmobileconsole>
+            </updates>
+        </layout>
+    </frontend>
+  <default>
+        <jsmobileconsole>
+            <config>
+                <jsmobileconsole_enabled>0</jsmobileconsole_enabled>
+            </config>
+        </jsmobileconsole>
+  </default>
+</config> 

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <default>
+        <reference name="head">
+            <action method="addItem" ifconfig="jsmobileconsole/config/jsmobileconsole_enabled">
+                <type>skin_css</type>
+                <name>css/jq/js-mobile-console/mobile-console.css</name>
+            </action>
+            <action method="addJs" ifconfig="jsmobileconsole/config/jsmobileconsole_enabled">
+                <script>jq/js-mobile-console/mobile-console.js</script>
+            </action>          
+        </reference>
+        <reference name="before_body_end">
+            <block type="core/template" after="-" name="jsmobileconsole" template="jq/js-mobile-console/display.phtml" />
+        </reference>
+    </default>
+</layout>

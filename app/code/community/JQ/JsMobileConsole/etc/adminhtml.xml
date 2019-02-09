@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+	<config>
+		<acl>
+			<resources>
+				<admin>
+					<children>
+						<system>
+							<children>
+								<config>
+									<children>
+										<jsmobileconsole translate="title" module="jsmobileconsole">
+											<title>JS Console mobile</title>
+											<sort_order>0</sort_order>
+										</jsmobileconsole>
+									</children>
+								</config>
+							</children>
+						</system>
+					</children>
+				</admin>
+			</resources>
+		</acl>
+	</config>

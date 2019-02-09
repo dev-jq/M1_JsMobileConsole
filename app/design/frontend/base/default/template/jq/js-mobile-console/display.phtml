@@ -1,0 +1,11 @@
+<?php if(Mage::helper('jsmobileconsole')->canShowConsole()): ?>
+    <script type="text/javascript">
+        mobileConsole.options({
+            showOnError: true,
+            proxyConsole: false,
+            isCollapsed: true,
+            catchErrors: true
+        });
+        mobileConsole.show();
+    </script>
+<?php endif; ?>

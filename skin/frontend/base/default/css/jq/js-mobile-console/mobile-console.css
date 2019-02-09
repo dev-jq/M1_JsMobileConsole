@@ -1,0 +1,98 @@
+#js-mobile-console{
+	width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 10000;
+}
+@media screen and (min-width: 992px) {
+	#js-mobile-console{
+		display: none !important;
+	}
+}
+
+#jsmc-log{
+	border-top: 1px solid #808080;
+	max-height: 100px;
+	overflow-y: auto;
+	margin-right: 10px;
+	font-size: 1em;
+}
+
+#jsmc-input-container{
+	position: relative;
+}
+
+#jsmc-input{
+	width: 100%;
+}
+
+#jsmc-button{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+.jsmc-log-el{
+	color: red;
+}
+
+.jsmc-log-error .jsmc-log-text{
+	color: red;
+}
+
+.jsmc-log-command .jsmc-log-text{
+	color: #009EE4;
+}
+
+.jsmc-log-text{
+	color: white;
+}
+
+.jsmc-log-target{
+	color: #7979EF;
+}
+
+.jsmc-log-target{
+	clear: both;
+}
+
+#jsmc-content{
+	background: black;
+    clear: both;
+    padding: 4px 8px;
+}
+
+#jsmc-collapse,
+#jsmc-commands,
+#jsmc-clear{
+	cursor: pointer;
+	width: 25px;
+	background: white;
+	text-align: center;
+	color: gray;
+	border: 1px solid #808080;
+	display: inline-block;
+}
+
+#jsmc-clear{
+	font-weight: bolder;
+}
+
+#jsmc-commands{
+	display: none;
+}
+
+#jsmc-commands-container{
+	background: #FFF;
+	display: none;
+}
+
+.jsmc-command-wrapper{
+	border-bottom: 1px solid #808080;
+	padding: 0px 14px;
+	cursor: pointer;
+}
+
+.jsmc-command:last-child{
+	border-bottom: none;
+}
